@@ -1,42 +1,81 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    color: #333;
 }
 
+/* Header */
 header {
-    background-color: #333;
+    background-color: #222;
     color: white;
-    padding: 20px;
+    padding: 25px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
+/* Navigation */
 nav {
-    margin: 10px;
+    margin: 20px;
 }
 
 nav a {
+    display: inline-block;
     margin: 10px;
-    padding: 8px 15px;
+    padding: 10px 20px;
     text-decoration: none;
+    font-weight: bold;
     color: white;
     background-color: #007BFF;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s;
 }
 
+nav a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Section Styling */
 section {
-    margin: 20px auto;
+    margin: 30px auto;
     width: 60%;
-    padding: 20px;
+    padding: 25px;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
+
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Links inside sections */
+section a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+section a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
